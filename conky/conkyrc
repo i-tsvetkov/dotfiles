@@ -1,0 +1,49 @@
+alignment bottom_left
+background yes
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+override_utf8_locale no
+use_xft no
+font -*-fixed-medium-*-*-*-14-*-*-*-*-*-koi8-r
+gap_x 0
+gap_y 0
+net_avg_samples 2
+double_buffer yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+own_window_type panel
+own_window_transparent no
+own_window_colour 151515
+stippled_borders 0
+update_interval 2
+uppercase no
+use_spacer left
+pad_percents 2
+show_graph_scale no
+show_graph_range no
+minimum_size 1366
+default_color d0d0d0
+color0 505050
+color1 90a959
+TEXT
+${iconv_start UTF-8 KOI8}\
+MEM: ${memperc}%\
+${color0} | ${color}\
+CPU: ${cpu}%\
+${color0} | ${color}\
+${color1}${cpugraph 10,60}${color}\
+${alignr}\
+${execi 3600 ruby .weather.rb sofia,bg}\
+${color0} | ${color}\
+${time %-I:%M %-d/%b/%a}\
+${iconv_stop}
