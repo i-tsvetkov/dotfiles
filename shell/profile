@@ -1,0 +1,6 @@
+xrdb -merge ~/.Xresources &
+urxvtd -q -f -o &
+conky -c ~/.conkyrc &
+
+export PATH="$HOME/bin:$PATH"
+
