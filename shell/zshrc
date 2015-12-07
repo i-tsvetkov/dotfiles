@@ -1,0 +1,21 @@
+autoload -U compinit && compinit
+autoload -U colors   && colors
+
+setopt HIST_IGNORE_DUPS
+
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.history
+
+export PROMPT="%{$fg_bold[green]%}%~%{$reset_color%} %{$fg_bold[blue]%}>%{$reset_color%} "
+
+bindkey "^[Od" backward-word
+bindkey "^[Oc" forward-word
+
+WORDCHARS=""
+
+eval $(dircolors)
+
+source '.alias'
+source '.function'
+
