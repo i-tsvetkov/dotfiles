@@ -1,0 +1,35 @@
+cd ~
+syntax on
+colorscheme solarized
+set background=dark
+
+set autoindent
+set smarttab
+set wildignorecase
+set smartcase
+set expandtab
+set hlsearch
+set magic
+set nonumber
+set nowrap
+set noswapfile
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+set guioptions=
+set guifont=DejaVu\ Sans\ Mono\ 18
+set columns=80
+set lines=24
+set guicursor=a:ver1,r:hor1
+
+set clipboard=unnamed
+set whichwrap+=<,>,h,l,[,]
+set listchars=tab:→\ ,eol:¬
+set shortmess+=I
+set guiheadroom=0
+
+highlight ExtraWhitespace guibg=#d33682
+match ExtraWhitespace /\s\+$/
+
