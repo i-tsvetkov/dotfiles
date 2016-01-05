@@ -45,5 +45,7 @@ ${color1}${cpugraph 10,60}${color}\
 ${alignr}\
 ${execi 3600 ruby .weather.rb sofia,bg}\
 ${color0} | ${color}\
+${exec ruby .volume.rb}\
+${color0} | ${color}\
 ${time %-I:%M %-d/%b/%a}\
 ${iconv_stop}
