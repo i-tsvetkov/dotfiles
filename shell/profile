@@ -4,3 +4,5 @@ conky -c ~/.conkyrc &
 
 export PATH="$HOME/bin:$PATH"
 
+lockfile-check .tv ; [[ $? -eq 0 ]] && slow-net-tv.sh
+
