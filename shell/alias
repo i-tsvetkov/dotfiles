@@ -13,7 +13,7 @@ alias off='sudo shutdown -h now'
 alias reboot='sudo reboot'
 alias pm-suspend='sudo pm-suspend'
 alias pm-hibernate='sudo pm-hibernate'
-alias upd='sudo apt-get update -qq && sudo apt-get dist-upgrade -y'
+alias upd='sudo apt-get update -qq && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
 alias yt='mpv --fullscreen --really-quiet --cache=4000'
 alias pause="echo 'Press any key to continue . . .' && read -sk"
 alias error='printf "\e[1;37;41m%-*s\e[m\n" $COLUMNS'
