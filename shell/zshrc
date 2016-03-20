@@ -18,4 +18,5 @@ eval $(dircolors)
 
 source '.alias'
 source '.function'
+source '.rvm/scripts/rvm'
 
