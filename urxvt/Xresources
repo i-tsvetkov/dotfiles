@@ -1,6 +1,7 @@
 #include ".base16-solarized.dark.xresources"
 
-Rxvt.font: xft:DejaVu Sans Mono:size=18
+Rxvt.font: xft:Hack:size=18
 Rxvt.scrollBar: False
 Rxvt.pointerBlank: True
+Rxvt.internalBorder: 10
 
