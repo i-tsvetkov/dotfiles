@@ -16,7 +16,7 @@ WORDCHARS=""
 
 eval $(dircolors)
 
-source '.alias'
-source '.function'
-source '.rvm/scripts/rvm'
+source "$HOME/.alias"
+source "$HOME/.function"
+source "$HOME/.rvm/scripts/rvm"
 
